@@ -1,0 +1,131 @@
+.text-brand {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.text-space {
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-section {
+    background-image: url('./images/bacgroun-white-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100%;
+    height: 300px;
+}
+
+
+.hero-section__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 20px 0 0;
+}
+
+.button {
+    width: 140px;
+    text-align: center;
+}
+
+.hero-section__button {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero-section__button:hover {
+    background-color: indigo;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-section__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-section__photo {
+    width: 150px;
+}
+
+
+.about-section__title {
+    width: 200px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 106px;
+}
+
+.about-section__text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.reviews-slider {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review-slide {
+    flex: 0 0 100%;
+    padding: 10px;
+}
+
+.review-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reviews-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reviews-dots .dot.active {
+    background: #007bff;
+}
