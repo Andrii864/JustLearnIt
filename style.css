@@ -2,8 +2,10 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
-
-    font-family: 'Caveat', cursive;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
