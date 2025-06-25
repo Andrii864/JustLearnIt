@@ -4,7 +4,7 @@ const reviewsDots = document.getElementById('reviewsDots');
 const totalReviews = reviewsTrack.children.length;
 let currentReview = 0;
 
-// Створення крапок
+// Динамічні крапки
 for (let i = 0; i < totalReviews; i++) {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -16,14 +16,20 @@ for (let i = 0; i < totalReviews; i++) {
     reviewsDots.appendChild(dot);
 }
 
+// Центрування слайда
 function updateReviewSlider() {
-    reviewsTrack.style.transform = `translateX(-${currentReview * 100}%)`;
+    const slideWidth = reviewsTrack.children[0].offsetWidth;
+    const containerWidth = reviewsSlider.offsetWidth;
+    const offset = (slideWidth + 20) * currentReview - (containerWidth - slideWidth) / 2;
+
+    reviewsTrack.style.transform = `translateX(-${offset}px)`;
+
+    // Активна крапка
     [...reviewsDots.children].forEach(dot => dot.classList.remove('active'));
     reviewsDots.children[currentReview].classList.add('active');
 }
 
-// ====== Swipe gestures ======
-
+// Swipe
 let startX = 0;
 let isDragging = false;
 
@@ -38,16 +44,19 @@ reviewsSlider.addEventListener('touchmove', (e) => {
     const diff = startX - currentX;
 
     if (Math.abs(diff) > 50) {
-        if (diff > 0 && currentReview < totalReviews - 1) {
-            currentReview++;
-        } else if (diff < 0 && currentReview > 0) {
-            currentReview--;
+        if (diff > 0) {
+            currentReview = (currentReview + 1) % totalReviews; // вперед, з циклом
+        } else {
+            currentReview = (currentReview - 1 + totalReviews) % totalReviews; // назад, з циклом
         }
         updateReviewSlider();
-        isDragging = false; // щоб не кілька разів при одному русі
+        isDragging = false;
     }
 }, { passive: true });
 
 reviewsSlider.addEventListener('touchend', () => {
     isDragging = false;
 });
+
+// Запуск початкового слайду
+updateReviewSlider();
