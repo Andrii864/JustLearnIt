@@ -2,6 +2,8 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+
+    font-family: 'Caveat', cursive;
 }
 
 
@@ -50,7 +52,7 @@ body {
 .hero-section__button {
     display: block;
     width: 100%;
-    padding: 15px 10px;
+    padding: 15px 15px;
     background-color: blueviolet;
     color: white;
     border: none;
@@ -64,6 +66,10 @@ body {
 .hero-section__button:hover {
     background-color: indigo;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-section {
+    margin-top: 50px;
 }
 
 .about-section__list {
@@ -95,6 +101,11 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+.reviews-slider__text {
+    text-align: center;
+    padding-top: 40px;
 }
 
 .reviews-slider {
