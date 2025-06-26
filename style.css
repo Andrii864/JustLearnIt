@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Caveat';
-    font-weight: 700;
-    src: url('./fonts/Caveat/static/Caveat-Bold.ttf') format('truetype');
+    font-weight: 400;
+    src: url('./fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'Caveat';
-    font-weight: 400;
-    src: url('./fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+    font-weight: 600;
+    src: url('./fonts/Caveat/static/Caveat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Caveat';
-    font-weight: 600;
-    src: url('./fonts/Caveat/static/Caveat-SemiBold.ttf') format('truetype');
+    font-weight: 700;
+    src: url('./fonts/Caveat/static/Caveat-Bold.ttf') format('truetype');
 }
 
 
@@ -39,7 +39,8 @@ body {
 
 .text-brand {
     color: blueviolet;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 48;
 }
 
 .text-space {
@@ -53,6 +54,8 @@ body {
     text-align: center;
 }
 
+/* header */
+
 .logo-section {
     background-image: url('./images/bacgroun-white-logo.png');
     background-position: center;
@@ -63,13 +66,24 @@ body {
     height: 300px;
 }
 
+/* Hero Section */
+
+.hero-section::after {
+    content: '';
+    display: block;
+    max-width: 310px;
+    width: 100%;
+    height: 4px;
+    background-color: purple;
+    margin: 10px auto;
+}
 
 .hero-section__list {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
-    margin: 0 20px 0 0;
+    margin: 0 20px 0 20px;
 }
 
 .button {
@@ -113,13 +127,15 @@ body {
 
 .about-section__title {
     width: 200px;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 24;
     text-align: left;
     padding-top: 106px;
 }
 
 .about-section__text {
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 1.5;
     text-align: left;
     padding-left: 10px;
