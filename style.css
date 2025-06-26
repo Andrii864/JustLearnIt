@@ -23,7 +23,11 @@
 }
 
 
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 
 html,
@@ -74,7 +78,7 @@ body {
 /* Hero Section */
 
 .hero-section {
-    margin-top: 230px;
+    margin-top: 200px;
 }
 
 .hero-section::after {
@@ -109,7 +113,7 @@ body {
     border: none;
     border-radius: 10px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     transition: background-color 0.3s;
 }
@@ -149,21 +153,17 @@ body {
     line-height: 1.5;
     text-align: left;
     padding-left: 10px;
+    padding-top: 10px;
     margin-bottom: 15px;
 }
 
-
-
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/* reviews section */
 
 .reviews-slider__text {
     text-align: center;
     padding-top: 40px;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .reviews-slider {
@@ -193,4 +193,49 @@ body {
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* format section */
+
+.format-section {
+    background: linear-gradient(135deg, #cbb4f5, #e9d4fc);
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin: 40px 0;
+    color: #2a0055;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 30px rgba(109, 33, 166, 0.2);
+}
+
+.format-title {
+    font-family: 'Caveat', cursive;
+    font-size: 42px;
+    text-align: center;
+    color: #5e2e91;
+    margin-bottom: 30px;
+}
+
+.format-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.format-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #b79be0;
+}
+
+.format-note {
+    background: #fff;
+    padding: 20px;
+    border-left: 6px solid #9f5cf2;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
 }
