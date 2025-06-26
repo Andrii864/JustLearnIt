@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JustLearnIt</title>
+    <title>JustLearnIt | Онлайн-уроки англійської для дітей і дорослих</title>
+    <meta name="description"
+        content="Онлайн-уроки англійської для дітей і дорослих від Софії. Формат, відгуки, ціни, запис на пробне заняття.">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -31,7 +34,8 @@
         <section class="about-section" id="about-section">
             <div class="container">
                 <div class="about-section__list">
-                    <img src="./images/about-photo-removebg-preview.png" alt="Моє фото" class="about-section__photo">
+                    <img src="./images/about-photo-removebg-preview.png" alt="Моє фото" loading="lazy"
+                        class="about-section__photo">
                     <h3 class="about-section__title">Мене <br>звати Софія</h3>
                 </div>
                 <p class="about-section__text">За освітою я філологиня та вчителька англійської та німецької мов.
@@ -68,19 +72,20 @@
             <h2 class="reviews-slider__text">Відгуки моїх студентів:</h2>
             <div class="reviews-slider__title">
                 <div class="reviews-track" id="reviewsTrack">
-                    <div class="review-slide"><img src="./images/response-1.PNG" alt="Відгук 1"></div>
-                    <div class="review-slide"><img src="./images/response-2.PNG" alt="Відгук 2"></div>
-                    <div class="review-slide"><img src="./images/response-3.PNG" alt="Відгук 3"></div>
-                    <div class="review-slide"><img src="./images/response-4.PNG" alt="Відгук 4"></div>
-                    <div class="review-slide"><img src="./images/response-5.PNG" alt="Відгук 5"></div>
-                    <div class="review-slide"><img src="./images/response-6.PNG" alt="Відгук 6"></div>
-                    <div class="review-slide"><img src="./images/response-7.PNG" alt="Відгук 7"></div>
-                    <div class="review-slide"><img src="./images/response-8.PNG" alt="Відгук 8"></div>
-                    <div class="review-slide"><img src="./images/response-9.PNG" alt="Відгук 9"></div>
-                    <div class="review-slide"><img src="./images/response-10.PNG" alt="Відгук 10"></div>
-                    <div class="review-slide"><img src="./images/response-11.PNG" alt="Відгук 11"></div>
+                    <div class="review-slide"><img src="./images/response-1.PNG" alt="Відгук 1" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-2.PNG" alt="Відгук 2" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-3.PNG" alt="Відгук 3" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-4.PNG" alt="Відгук 4" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-5.PNG" alt="Відгук 5" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-6.PNG" alt="Відгук 6" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-7.PNG" alt="Відгук 7" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-8.PNG" alt="Відгук 8" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-9.PNG" alt="Відгук 9" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-10.PNG" alt="Відгук 10" loading="lazy"></div>
+                    <div class="review-slide"><img src="./images/response-11.PNG" alt="Відгук 11" loading="lazy"></div>
                 </div>
                 <div class="reviews-dots" id="reviewsDots"></div>
+            </div>
         </section>
 
         <section class="format-section" id="format-section">
@@ -98,6 +103,9 @@
                     використовуватимемо та визначу
                     рівень мови, мету й запит на навчання.
                 </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSePOqtcxT7Rmw7gJZUSHMLQu_eHGmxw8Z4yOvlaYpz5b3yClg/viewform?usp=dialog"
+                    class="pricing-button">Записатись на пробне заняття</a>
+
             </div>
         </section>
 
@@ -112,7 +120,6 @@
                             <li>👧 Дитина — <span>550 грн</span></li>
                             <li>🧑 Дорослий — <span>850 грн</span></li>
                         </ul>
-                        <a href="#contact" class="pricing-button">Записатись</a>
                     </div>
 
                     <div class="pricing-card popular">
@@ -122,13 +129,15 @@
                             <li>👧 Дитячий — <span>5000 грн</span></li>
                             <li>🧑 Дорослий — <span>8000 грн</span></li>
                         </ul>
-                        <a href="#contact" class="pricing-button">Записатись</a>
+
                     </div>
                 </div>
 
                 <p class="pricing-note">
                     Оплата здійснюється перед початком занять на рахунок <strong>ФОП</strong>.
                 </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSePOqtcxT7Rmw7gJZUSHMLQu_eHGmxw8Z4yOvlaYpz5b3yClg/viewform?usp=dialog"
+                    class="pricing-button">Записатись на пробне заняття</a>
             </div>
         </section>
 
@@ -137,8 +146,13 @@
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#about-section">Про мене</a>
+            <a href="#format-section">Формати навчання</a>
+            <a href="#reviews-section">Відгуки</a>
+        </nav>
+        <p class="footer-copy">© 2025 JustLearnIt. Всі права захищені.</p>
     </footer>
     <script src="./script.js"></script>
 </body>
