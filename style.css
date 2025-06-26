@@ -195,6 +195,27 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.reviews-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reviews-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reviews-dots .dot.active {
+    background: #6f42c1;
+    /* або будь-який фіолетовий */
+}
+
 /* format section */
 
 .format-section {
