@@ -324,6 +324,24 @@ body {
     color: #6f42c1;
 }
 
+.pricing-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #6f42c1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.pricing-button:hover {
+    background-color: #5e2e91;
+    transform: scale(1.03);
+}
+
 .pricing-note {
     text-align: center;
     margin-top: 40px;
