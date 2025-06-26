@@ -38,6 +38,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 
