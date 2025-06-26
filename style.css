@@ -22,6 +22,12 @@
     src: url('./fonts/Caveat/static/Caveat-Bold.ttf') format('truetype');
 }
 
+:root {
+    --bp-mobile: 480px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1280px;
+}
+
 
 * {
     box-sizing: border-box;
@@ -88,6 +94,13 @@ body {
     margin-top: 350px;
 }
 
+@media (min-width: 1200px) {
+    .hero-section {
+        margin-top: 50px;
+    }
+}
+
+
 .hero-section::after {
     content: '';
     display: block;
@@ -97,6 +110,13 @@ body {
     background-color: purple;
     margin: 10px auto;
 }
+
+@media (min-width: 1200px) {
+    .hero-section::after {
+        max-width: 650px;
+    }
+}
+
 
 .hero-section__list {
     display: flex;
@@ -151,6 +171,11 @@ body {
     width: 150px;
 }
 
+@media (min-width: 1200px) {
+    .about-section__photo {
+        width: 250px;
+    }
+}
 
 .about-section__title {
     width: 200px;
@@ -158,6 +183,12 @@ body {
     font-size: 24px;
     text-align: left;
     padding-top: 106px;
+}
+
+@media (min-width: 1200px) {
+    .about-section__title {
+        padding-top: 170px;
+    }
 }
 
 .about-section__text {
@@ -168,6 +199,14 @@ body {
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .about-section__text {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
 }
 
 /* reviews section */
@@ -205,8 +244,9 @@ body {
     max-height: 500px;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .reviews-dots {
     text-align: center;
@@ -227,6 +267,47 @@ body {
 .reviews-dots .dot.active {
     background: #6f42c1;
     /* або будь-який фіолетовий */
+}
+
+.arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: #6f42c1;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease;
+}
+
+.arrow:hover {
+    background: #ecd8ff;
+}
+
+.arrow-left {
+    left: 2px;
+}
+
+.arrow-right {
+    right: 2px;
+}
+
+@media (min-width: 768px) {
+    .arrow {
+        display: block;
+    }
+
+    .reviews-slider {
+        position: relative;
+    }
 }
 
 /* format section */
@@ -348,6 +429,16 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s;
+}
+
+@media (min-width: 1200px) {
+    .pricing-button {
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+        margin-left: 450px;
+    }
+
 }
 
 .pricing-button:hover {
