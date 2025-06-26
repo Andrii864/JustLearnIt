@@ -111,7 +111,7 @@ body {
     margin: 10px auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .hero-section::after {
         max-width: 650px;
     }
